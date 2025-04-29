@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Articulos en Venta HMO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    header {
+      background: url('https://media.istockphoto.com/id/1469510156/photo/sunset-on-bell-pass-in-the-majestic-mcdowell-mountains.jpg?s=612x612&w=0&k=20&c=4OdXRIFwRhb4qM9jE8xFOjgI7c7Nf_Agz4v51TJ0NIE=') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 8px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.01);
+    }
+
+    .item h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Crop the image to fill space nicely */
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .price {
+      color: #FF0000;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 30px;
+      max-width: 600px;
+      margin: 60px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      font-size: 1.1em;
+    }
+
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.2s ease;
+    }
+
+    .contact-info a:hover {
+      color: #006e51;
+    }
+
+    .contact-info i {
+      font-size: 1.4em;
+      width: 24px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Articulos en Venta</h1>
+    <h2>Solo Hermosillo</h2>
+  </header>
+
+  <div class="container">
+
+    <div class="item">
+      <h2>Macbook Pro 2019, 16 pulgadas</h2>
+      <p class="price">$15,000</p>
+      <p>Macbook en condiciones excelentes. El único detalle de uso está en el color del cable del cargador.</p>
+      <div class="image-grid">
+        <img src="images/mac/1.jpg?text=1" alt="Macbook 1" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/2.jpg?text=2" alt="Macbook 2" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/3.jpg?text=3" alt="Macbook 3" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/4.jpg?text=4" alt="Macbook 4" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/5.jpg?text=5" alt="Macbook 5" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/6.jpg?text=6" alt="Macbook 6" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/7.jpg?text=6" alt="Macbook 7" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/8.jpg?text=6" alt="Macbook 8" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/mac/1000094839.jpg?text=6" alt="Macbook 9" style="grid-column: span 3; grid-row: span 3;">
+      </div> 
+    </div>
+
+    <div class="item">
+      <h2>Corralito o Cuna de Viaje</h2>
+      <p class="price">$1,500</p>
+      <p>Corralito con muchos accesorios y muy poco uso.</p>
+      <div class="image-grid">
+        <img src="images/corralito/1.jpg?text=1" alt="Cuna 1" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/corralito/1000102155.jpg?text=2" alt="Cuna 2" style="grid-column: span 2; grid-row: span 2;">
+      </div>
+    </div>
+
+    <div class="item">
+      <h2>Colchon marca Selther para Cuna de Viaje con Protector</h2>
+      <p class="price">$300</p>
+      <p>Colchon anti-cólico para cuna de viaje con muy poco uso. Incluye protector marca Vianney.</p>
+      <div class="image-grid">
+        <img src="images/colchon/1.jpg" alt="Colchon 1" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/colchon/1000102156.jpg" alt="Colchon 2">
+        <img src="images/colchon/3.jpg?text=3" alt="Colchon 3">
+      </div>
+    </div>
+
+    <div class="item">
+      <h2>Juego de Cuna para Corralito</h2>
+      <p class="price">$100</p>
+      <p>Juego de cuna muy cómodo y en excelente estado. Incluye edredón, sábana de cajón y funda para almohada pequeña.</p>
+      <div class="image-grid">
+        <img src="images/colcha/20250429_115751.jpg?text=1" alt="Juego 1" style="grid-column: span 2; grid-row: span 2;">
+        <img src="images/colcha/20250429_115847.jpg?text=2" alt="Juego 2" style="grid-column: span 2; grid-row: span 2;">
+      </div>
+    </div>
+
+    <div class="item">
+      <h2>Portabebé 4 en 1</h2>
+      <p class="price">$350</p>
+      <p>Portabebé versátil en excelente estado, ideal desde recién nacido hasta más de 1 año.</p>
+      <div class="image-grid">
+        <img src="images/portabebe/1.png?text=1" alt="Portabebe 1" style="grid-column: span 3; grid-row: span 3;">
+        <img src="images/portabebe/2.jpg?text=1" alt="Portabebe 2" style="grid-column: span 2; grid-row: span 2;">
+      </div>
+    </div>
+  
+    <div class="item">
+      <h2>Combo Bebé</h2>
+      <p class="price">$2,000</p>
+      <p>Posibilidad de todos los productos juntos: Cuna de viaje con accesorios, colchón con protector, juego de cuna y portabebé.</p>
+      <div class="image-grid">
+        <img src="images/all.jpg?text=1" alt="Combo 1" style="grid-column: span 3; grid-row: span 3;">
+      </div>
+  </div>
+
+</div>
+
+  <section class="contact-box">
+    <h2>Contacto</h2>
+    <div class="contact-info">
+      <a href="https://wa.me/1234567890" target="_blank">
+        <i class="fab fa-whatsapp"></i> 662-405-3901 (Brenda)
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Articulos en venta (HMO). All rights reserved.
+  </footer>
+
+</body>
+</html>
